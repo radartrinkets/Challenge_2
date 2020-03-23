@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi&display=swap');
+
+* {
+	background-color: black;
+	font-family: 'Gugi', cursive;
+	color: white;
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+.main{
+	display: flex;
+	align-items: center;
+}
+
+#daynight{
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 68px auto 0 auto;
+	background-image: url(../images/daynight.png);
+	padding: 0;
+	background-size: 400px;
+	background-position: center center;
+	background-color: transparent;
+}
+
+#clock{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto 0 auto;
+	background: url(../images/clockface.png);
+	list-style: none;
+	padding: 0;
+	background-size: 250px;
+}
+
+#sec, #min, #hour{
+	position: absolute;
+	width: 30px;
+	height: 250px;
+	top: 0px;
+	left: 110px;
+}
+
+#sec{
+	background: url(../images/clocksecond.png);
+	background-size: 30px 250px;
+	z-index: 3;
+}
+
+#min{
+	background: url(../images/clockminute.png);
+	background-size: 30px 250px;
+	z-index: 2;
+}
+
+#hour{
+	background: url(../images/clockhour.png);
+	background-size: 30px 250px;
+	z-index: 1;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+	/* For tablet: */
+
+
+	*{
+		font-size: 1.50em;
+	}
+
+	#daynight{
+	width: 700px;
+	height: 700px;
+	margin: 50px auto 0 auto;
+	background-size: 700px;
+	}
+
+	#clock{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto 0 auto;
+	background-size: 400px;
+}
+
+#sec, #min, #hour{
+	height: 400px;
+	left: 185px;
+}
+
+#sec{
+	background-size: 30px 400px;
+	
+}
+
+#min{
+	background-size: 30px 400px;
+	
+}
+
+#hour{
+	background-size: 30px 400px;
+	
+}
+
+}
+
+
+@media only screen and (min-width: 1152px) {
+	/* For desktop small: */
+
+	*{
+		font-size: 1.50em;
+	}
+
+	#daynight{
+	width: 600px;
+	height: 600px;
+	margin: 50px auto 0 auto;
+	background-size: 600px;
+	}
+
+	#clock{
+	width: 350px;
+	height: 350px;
+	margin: 0 auto 0 auto;
+	background-size: 350px;
+}
+
+#sec, #min, #hour{
+	height: 350px;
+	left: 185px;
+}
+
+#sec{
+	background-size: 30px 350px;
+	
+}
+
+#min{
+	background-size: 30px 350px;
+	
+}
+
+#hour{
+	background-size: 30px 350px;
+	
+}
+
+}
+
+
+@media only screen and (min-width: 1500px){
+	/* For desktop groot: */
+
+#daynight{
+	width: 700px;
+	height: 700px;
+	margin: 150px auto 0 auto;
+	background-size: 700px;
+	}
+
+	#clock{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto 0 auto;
+	background-size: 400px;
+}
+
+#sec, #min, #hour{
+	height: 400px;
+	left: 185px;
+}
+
+#sec{
+	background-size: 30px 400px;
+	
+}
+
+#min{
+	background-size: 30px 400px;
+	
+}
+
+#hour{
+	background-size: 30px 400px;
+	
+}
+
+
+}
